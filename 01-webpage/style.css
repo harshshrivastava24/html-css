@@ -31,3 +31,21 @@ nav a {
     display: flex;
     gap: 15px;
 }
+
+#btmleft {
+    width: 200px;
+    position: absolute;
+    bottom: 40%;
+    left: 5%;
+}
+
+main>h1 {
+    position: absolute;
+    left: 5%;
+    font-size: 250px;
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-between;
+}
