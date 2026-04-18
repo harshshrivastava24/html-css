@@ -31,6 +31,8 @@ img {
 }
 
 #right {
+    margin-top: 40px;
+    padding: 10px 15px;
     width: 50%;
 }
 
@@ -51,4 +53,37 @@ span {
     font-size: 75px;
     font-weight: 400;
     color: grey;
+}
+
+.btmright {
+    position: absolute;
+    right: 2%;
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.btmright h2 {
+    font-size: 28px;
+}
+.btmright p {
+    font-size: 17px;
+}
+
+button {
+    background-color: white;
+    position: absolute;
+    right: 2%;
+    bottom: 20%;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btmright .second{
+    margin-top: 15px;
 }
