@@ -15,7 +15,7 @@ html, body{
     display: flex;
     justify-content: center;
     gap: 35px;
-    background-color: rgb(239, 237, 237);
+    background-color: rgb(244, 245, 246);
     padding: 15px 18px;
 }
 
@@ -70,4 +70,25 @@ html, body{
     color: white;
     border: none;
     background-color: rgb(48, 110, 255);
+}
+#center2 {
+    margin-top: 10px;
+    padding: 60px;
+    text-align: center;
+    height: 570px;
+    background-image: url("https://www.apple.com/in/home/images/heroes/apple-watch-series-11/hero_apple_watch_series_11__bdz1mml4dx6q_medium.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    background-color: rgb(244, 245, 246);
+}
+
+#center2 h1{
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#center2 h2{
+    font-size: 24px;
+    font-weight: 300;
 }
