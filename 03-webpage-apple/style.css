@@ -92,3 +92,23 @@ html, body{
     font-size: 24px;
     font-weight: 300;
 }
+#center3 {
+    margin-top: 10px;
+    padding: 60px;
+    text-align: center;
+    height: 570px;
+    background-image: url("https://www.apple.com/v/home/cm/images/heroes/macbook-neo/hero_macbook_neo__gnm3snkti4a6_medium.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    background-color: rgb(244, 245, 246);
+}
+
+#center3 h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+#center3 h2{
+    font-size: 24px;
+    font-weight: 300;
+}
