@@ -16,6 +16,7 @@ main {
     gap: 30px;
 }
 .card1 {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,29 +26,40 @@ main {
     background-color: rgb(236, 227, 223);
     border-radius: 10px;
     box-shadow: 0px 5px 18px rgb(160, 143, 143);
-    padding: 15px 5px;
+    overflow: hidden;
 }
 
 img {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    border-radius: 100px;
+}
+
+.btm {
+    color: white;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    height: 30%;
+    bottom: -30%;
+    width: 100%;
+    background: linear-gradient(transparent, black);
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in 0.5s;
+}
+
+.card1:hover .btm {
+    bottom: 0%;
 }
 
 h1 {
-    font-size: 30px ;
+    font-size: 20px ;
 }
 
-p{
-    font-size: 18px;
-    font-weight: 400;
-    color: rgb(108, 108, 108);
-    text-align: center;
-}
 
 button {
-    padding: 10px 15px;
+    padding: 8px 12px;
     font-size: 15px;
     border-radius: 100px;
     border: none;
@@ -56,6 +68,7 @@ button {
 }
 
 .card2 {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,9 +78,10 @@ button {
     background-color: rgb(236, 227, 223);
     border-radius: 10px;
     box-shadow: 0px 5px 18px rgb(160, 143, 143);
-    padding: 15px 5px;
+    overflow: hidden;
 }
 .card3 {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,5 +91,13 @@ button {
     background-color: rgb(236, 227, 223);
     border-radius: 10px;
     box-shadow: 0px 5px 18px rgb(160, 143, 143);
-    padding: 15px 5px;
+    overflow: hidden;
+}
+
+.card2:hover .btm {
+    bottom: 0%;
+}
+
+.card3:hover .btm {
+    bottom: 0%;
 }
