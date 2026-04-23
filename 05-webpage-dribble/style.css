@@ -49,3 +49,18 @@ nav {
     font-size: 15px;
     font-weight: 600;
 }
+
+#hero-section {
+    display: flex;
+    padding: 0px 50px;
+}
+
+.hero-right {
+    width: 50%;
+}
+
+.hero-right #vid {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
