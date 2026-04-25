@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    gap: 10px;
+    padding: 10px;
+
+    grid-template-areas: "tleft tleft tright1 tright2"
+                         "bleft1 bleft2 bright bright"
+                         "btmleft btmleft btmright1 btmright2";
+}
+
+.sections {
+    height: 233px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#tleft {
+    background-color: lavender;
+    grid-area: tleft;
+}
+
+#tright1 {
+    background-color: lavender;
+    grid-area: tright1;
+}
+#tright2 {
+    background-color: lavender;
+    grid-area: tright2;
+}
+#bleft1 {
+    background-color: rgb(242, 185, 242);
+    grid-area: bleft1;
+}
+#bleft2 {
+    background-color: rgb(242, 185, 242);
+    grid-area: bleft2;
+}
+#bright {
+    background-color: rgb(242, 185, 242);
+    grid-area: bright;
+}
+#btmleft {
+    background-color: plum;
+    grid-area: btmleft;
+}
+#btmright1 {
+    background-color: plum;
+    grid-area: btmright1;
+}
+#btmright2 {
+    background-color: plum;
+    grid-area: btmright2;
+}
