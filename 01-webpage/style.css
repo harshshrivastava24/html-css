@@ -36,12 +36,12 @@ nav {
 #btmleft {
     width: 200px;
     position: absolute;
-    bottom: 25%;
+    bottom: 24%;
     left: 5%;
 }
 
 #btmleft h4{
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 20px;
 }
 #btmleft h3{
@@ -50,8 +50,8 @@ nav {
 
 main>h1 {
     margin-left: 65px;
-    font-size: 230px;
-    font-weight: 550;
+    font-size: 330px;
+    font-weight: 500;
 }
 
 #bottom {
@@ -75,8 +75,10 @@ main>h1 {
 
 #img1 {
     position: absolute;
-    height: 300px;
-    left: 60%;
+    height: 350px;
+    left: 65%;
+    top: 40%;
+    z-index: 1;
     
 }
 #img2 {
@@ -84,12 +86,12 @@ main>h1 {
     height: 260px;
     width: 200px;
     left: 45%;
-    top: 45%;
-    z-index: 2;
+    top: 50%;
 }
 #img3 {
     position: absolute;
     height: 180px;
+    width: 150px;
     left: 57%;
-    top: 61%;
+    top: 70%;
 }
