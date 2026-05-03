@@ -10,18 +10,29 @@ html, body {
     width: 100%;
 }
 
+body {
+    background-color: rgb(18, 17, 17);
+}
+
+@mixin flexCol ($gap:0rem) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+section {
+    max-width: 1600px;
+}
+
 main {
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    @include flexCol(0rem);
+    align-items: center;
 
     section {
         width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        @include flexCol(1rem);
         padding: 1rem;
     }
 
@@ -35,22 +46,25 @@ main {
     }
 
     .btm {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        padding: 1rem;
+        @include flexCol(2.4rem);
+        padding: 2rem;
         background-color: #2d2929;
         color: whitesmoke;
         border-radius: 10px;
 
         .text {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
+            @include flexCol(1rem);
 
             h1 {
-            font-weight: 300;
+            font-weight: 400;
+            font-size: 2.4rem ;
             text-transform: uppercase;
+             }
+
+             p{
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+                opacity: 0.6;
              }
 
             button {
@@ -62,4 +76,31 @@ main {
             }
         }
     }
+}
+
+@media (min-width:900px) {
+   main {
+    
+    section {
+        flex-direction: row;
+
+        .top, .btm {
+            width: 50%;
+        }
+
+        .btm {
+            justify-content: space-between;
+            padding: 4rem;
+
+            .text {
+                justify-content: space-between;
+                gap: 1.5rem;
+                h1 {
+                    line-height: 5rem;
+                    font-size: 3.8rem;
+                }
+            }
+        }
+    }
+   }
 }
