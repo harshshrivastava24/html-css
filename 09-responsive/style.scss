@@ -35,18 +35,17 @@ main {
     @include flexCol(0rem);
     align-items: center;
 
-    section {
+    section.view1 {
         width: 100%;
         @include flexCol(1rem);
         padding: 1rem;
-    }
 
-    .top {
+         .top {
         width: 100%;
 
         img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 0.7rem;
         }
     }
 
@@ -54,7 +53,7 @@ main {
         @include flexCol(2.4rem);
         padding: 2rem;
         background-color: #2d2929;
-        border-radius: 10px;
+        border-radius: 0.7rem;
 
         .text {
             @include flexCol(1rem);
@@ -73,19 +72,255 @@ main {
 
             button {
                 width: fit-content;
-                border-radius: 5px;
+                border-radius: 0.3rem;
                 border: none;
                 background: none;
                 color: whitesmoke;
             }
         }
     }
+
+    }
+
+    section.view2 {
+        width: 100%;
+        padding: 1rem;
+        @include flexCol(1.5rem);
+
+        .top, .btm {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            p{
+                opacity: 0.6;
+            }
+
+            h2{
+                font-size: 3rem;
+                font-weight: 400;
+            }
+
+            div {
+                @include flexCol(0.5rem);
+                text-align: center;               
+            }
+        }
+
+    }
+
+    section.view3 {
+        width: 100%;
+        @include flexCol(1rem);
+        padding: 1rem;
+
+        .top {
+            img {
+            width: 100%;
+            border-radius: 0.7rem;
+            }
+        }
+
+        .btm {
+        @include flexCol(2.4rem);
+        padding: 2rem;
+        background-color: #2d2929;
+        border-radius: 0.7rem;
+
+        .text {
+            @include flexCol(1rem);
+
+            h1 {
+            font-weight: 400;
+            font-size: 2.4rem ;
+            text-transform: uppercase;
+             }
+
+             p{
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+                opacity: 0.6;
+             }
+
+        }
+    }
+    }
+    section.view4 {
+        width: 100%;
+        @include flexCol(1rem);
+        padding: 1rem;
+
+        .top {
+            img {
+            width: 100%;
+            border-radius: 0.7rem;
+            }
+        }
+
+        .btm {
+        @include flexCol(2.4rem);
+        padding: 2rem;
+        background-color: #2d2929;
+        border-radius: 0.7rem;
+
+        .text {
+            @include flexCol(1rem);
+
+            h1 {
+            font-weight: 400;
+            font-size: 2.4rem ;
+            text-transform: uppercase;
+             }
+
+             p{
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+                opacity: 0.6;
+             }
+
+        }
+    }
+    }
+
+    section.view5 {
+        width: 100%;
+        @include flexCol(1.5rem);
+        padding: 1rem;
+
+        .card1 {
+            @include flexCol(0rem);
+            justify-content: space-between;
+            background-image: url("./images/card1.webp");
+            background-size: cover;
+            aspect-ratio: 1/1;
+            border-radius: 0.7rem;
+            padding: 1rem;
+
+            .top {
+                display: flex;
+                justify-content: flex-end;
+                gap: 0.5rem;
+                font-size: 1.2rem;
+                
+                .icon {
+                    padding: 0.8rem;
+                    background-color: rgba(88, 87, 87, 0.641);
+                    -webkit-backdrop-filter: blur(5px);
+                    backdrop-filter: blur(5px);
+                    border-radius: 50%;
+                }
+            }
+
+            .btm {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: uppercase;
+                background-color: rgba(88, 87, 87, 0.641);
+                -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
+                border-radius: 0.6rem;
+                padding: 1rem;
+
+                h2{
+                    font-weight: 400;
+                }
+            }
+
+        }
+
+        .card2 {
+            @include flexCol(0rem);
+            justify-content: space-between;
+            background-image: url("./images/card2.webp");
+            background-size: cover;
+            aspect-ratio: 1/1;
+            border-radius: 0.7rem;
+            padding: 1rem;
+
+            .top {
+                display: flex;
+                justify-content: flex-end;
+                gap: 0.5rem;
+                font-size: 1.2rem;
+                
+                .icon {
+                    padding: 0.8rem;
+                    background-color: rgba(88, 87, 87, 0.641);
+                    -webkit-backdrop-filter: blur(5px);
+                    backdrop-filter: blur(5px);
+                    border-radius: 50%;
+                }
+            }
+
+            .btm {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: uppercase;
+                background-color: rgba(88, 87, 87, 0.641);
+                -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
+                border-radius: 0.6rem;
+                padding: 1rem;
+
+                h2 {
+                    font-weight: 400;
+                }
+            }
+
+        }
+    }
+
+    section.view6 {
+        @include flexCol(1rem);
+        width: 100%;
+        padding: 1rem;
+
+        .top {
+            width: 100%;
+
+            img {
+                width: 100%;
+                border-radius: 0.7rem;
+            }
+        }
+
+        .btm {
+            @include flexCol(4rem);
+            // justify-content: space-between;
+            border-radius: 0.7rem;
+            text-transform: uppercase;
+            background-color: #2d2929;
+            padding: 2rem;
+
+            .text {
+                @include flexCol(0.8rem);
+                h1 {
+                    font-weight: 400;
+                    font-size: 2.6rem;
+                }
+            }
+
+
+            button {
+                width: fit-content;
+                text-transform: uppercase;
+                padding: 0.6rem;
+                border: none;
+                background: none;
+                color: whitesmoke;
+                font-size: 1rem;
+            }
+        }
+    }
+   
 }
 
 @media (min-width:900px) {
    main {
     
-    section {
+    section.view1 {
         flex-direction: row;
 
         .top, .btm {
@@ -106,5 +341,85 @@ main {
             }
         }
     }
+
+    section.view2 {
+        flex-direction: row;
+    }
+
+    section.view3 {
+        flex-direction: row-reverse;
+
+        .top, .btm {
+            width: 50%;
+        }
+
+        .btm {
+            justify-content: space-between;
+            padding: 4rem;
+
+            .text {
+                h1{
+                    font-size: 3.6rem;
+                }
+
+                .paragraphs {
+                display: flex;
+                gap: 0.5rem;
+            }
+            }
+           
+        }
+    }
+    section.view4 {
+        flex-direction: row;
+
+        .top, .btm {
+            width: 50%;
+        }
+
+        .btm {
+            justify-content: space-between;
+            padding: 4rem;
+
+            .text {
+                h1{
+                    font-size: 3.6rem;
+                }
+
+                .paragraphs {
+                display: flex;
+                gap: 0.5rem;
+            }
+            }
+           
+        }
+    }
+
+    section.view5 {
+        flex-direction: row;
+        
+        .card1 {
+            width: 33%;
+            aspect-ratio: 1/1.2;
+        }
+        .card2 {
+            width: 33%;
+            aspect-ratio: 1/1.2;
+        }
+    }
+
+    section.view6 {
+        flex-direction: row;
+
+        .top, .btm {
+            width: 50%;
+        }
+
+        .btm {
+            padding: 4rem;
+            justify-content: space-between;
+        }
+    }
+
    }
 }
