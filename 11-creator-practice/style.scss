@@ -20,10 +20,13 @@ div.follower {
 }
 
 nav {
+    background-color: rgb(18, 16, 16);
+    color: white;
+
+    .menu {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
-    background-color: rgb(18, 16, 16);
     color: white;
     border-radius: 1.6rem;
 
@@ -36,5 +39,23 @@ nav {
 
     .menu-i {
         font-size: 1.8rem;
+    }
+    .close {
+        display: none;
+        font-size: 1.8rem;
+    }
+    
+}
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        a{
+            display: none;
+            font-size: 1.3rem;
+        }
     }
 }

@@ -20,19 +20,36 @@ div.follower {
 }
 
 nav {
+  background-color: rgb(18, 16, 16);
+  color: white;
+}
+nav .menu {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  background-color: rgb(18, 16, 16);
   color: white;
   border-radius: 1.6rem;
 }
-nav .logo {
+nav .menu .logo {
   font-size: 1.5rem;
   background-color: rgb(238, 25, 25);
   padding: 0.1rem 0.3rem;
   border-radius: 0.3rem;
 }
-nav .menu-i {
+nav .menu .menu-i {
   font-size: 1.8rem;
+}
+nav .menu .close {
+  display: none;
+  font-size: 1.8rem;
+}
+nav .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+nav .list a {
+  display: none;
+  font-size: 1.3rem;
 }/*# sourceMappingURL=style.css.map */
