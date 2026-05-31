@@ -83,12 +83,13 @@ section.view1 .hero-text h1 {
   font-weight: 500;
 }
 section.view1 .hero-text .para {
-  width: 65%;
+  width: 90%;
+  max-width: 34ch;
 }
 section.view1 .btns {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.1rem;
 }
 section.view1 .btns button {
   padding: 1rem 1.6rem;
@@ -101,4 +102,32 @@ section.view1 .btns .bt1 {
 }
 section.view1 .btns .bt2 {
   background-color: rgb(18, 16, 16);
+}
+section.view1 .workedwith {
+  text-align: center;
+}
+section.view1 .workedwith .imgs {
+  display: flex;
+}
+section.view1 .workedwith .imgs img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.view1 .workedwith .imgs .num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.8rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: rgb(170, 172, 172);
+}
+section.view1 .workedwith .stars i {
+  font-size: 1.4rem;
+  color: gold;
+  letter-spacing: 0;
 }/*# sourceMappingURL=style.css.map */

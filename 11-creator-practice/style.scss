@@ -90,14 +90,15 @@ section.view1 {
         }
 
         .para {
-            width: 65%;
+            width: 90%;
+            max-width: 34ch;
         }
     }
 
     .btns {
         display: flex;
         flex-direction: column;
-        gap: 1.2rem;
+        gap: 1.1rem;
 
         button {
             padding: 1rem 1.6rem;
@@ -111,6 +112,40 @@ section.view1 {
         }
         .bt2 {
             background-color: rgb(18, 16, 16);
+        }
+    }
+
+    .workedwith {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        text-align: center;
+        .imgs {
+            display: flex;
+            img{
+                height: 3rem;
+                width: 3rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .num {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0.5rem 0.8rem;
+                height: 3rem;
+                width: 3rem;
+                border-radius: 50%;
+                background-color: rgb(170, 172, 172);
+            }
+        }
+
+        .stars {
+            i {
+                font-size: 1.4rem;
+                color: gold;
+                letter-spacing: 0;
+            }
         }
     }
 }
