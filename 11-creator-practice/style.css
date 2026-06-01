@@ -8,6 +8,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  color: white;
 }
 
 div.follower {
@@ -20,103 +21,124 @@ div.follower {
   transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 60ms;
 }
 
-nav {
+main {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+main video {
+  position: absolute;
+  z-index: 1;
+}
+main .layer {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(11, 11, 12, 0.4) 0%, rgba(11, 11, 12, 0.8) 70%, #0b0b0c 100%);
+}
+main nav {
+  position: relative;
+  z-index: 3;
   background-color: rgb(18, 16, 16);
-  color: white;
   margin: 0.8rem 1rem;
   border-radius: 1.6rem;
 }
-nav .menu {
+main nav .menu {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  color: white;
 }
-nav .menu .logo {
+main nav .menu .logo {
   font-size: 1.5rem;
   background-color: rgb(238, 25, 25);
   padding: 0.1rem 0.3rem;
   border-radius: 0.3rem;
 }
-nav .menu .menu-i {
+main nav .menu .menu-i {
   font-size: 1.8rem;
 }
-nav .menu .close {
+main nav .menu .close {
   display: none;
   font-size: 1.8rem;
 }
-nav .list {
+main nav .list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-nav .list a {
+main nav .list a {
   display: none;
   font-size: 1.3rem;
 }
-
-section.view1 {
+main section.view1 {
+  position: relative;
+  z-index: 3;
+}
+main section.view1 .texts {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
-section.view1 .noti {
+main section.view1 .texts .noti {
   padding: 0.2rem 0.6rem;
   border: 2px solid rgb(151, 149, 149);
   border-radius: 10rem;
 }
-section.view1 .noti .noti-h {
+main section.view1 .texts .noti .noti-h {
   font-size: 1rem;
 }
-section.view1 .hero-text {
+main section.view1 .texts .hero-text {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
 }
-section.view1 .hero-text h1 {
+main section.view1 .texts .hero-text h1 {
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 500;
 }
-section.view1 .hero-text .para {
+main section.view1 .texts .hero-text .para {
   width: 90%;
   max-width: 34ch;
 }
-section.view1 .btns {
+main section.view1 .texts .btns {
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
 }
-section.view1 .btns button {
+main section.view1 .texts .btns button {
   padding: 1rem 1.6rem;
   border-radius: 5rem;
   border: none;
   color: white;
 }
-section.view1 .btns .bt1 {
+main section.view1 .texts .btns .bt1 {
   background-color: rgb(224, 65, 65);
 }
-section.view1 .btns .bt2 {
+main section.view1 .texts .btns .bt2 {
   background-color: rgb(18, 16, 16);
 }
-section.view1 .workedwith {
+main section.view1 .texts .workedwith {
   text-align: center;
 }
-section.view1 .workedwith .imgs {
+main section.view1 .texts .workedwith .imgs {
   display: flex;
 }
-section.view1 .workedwith .imgs img {
+main section.view1 .texts .workedwith .imgs img {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-section.view1 .workedwith .imgs .num {
+main section.view1 .texts .workedwith .imgs .num {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,7 +148,7 @@ section.view1 .workedwith .imgs .num {
   border-radius: 50%;
   background-color: rgb(170, 172, 172);
 }
-section.view1 .workedwith .stars i {
+main section.view1 .texts .workedwith .stars i {
   font-size: 1.4rem;
   color: gold;
   letter-spacing: 0;
