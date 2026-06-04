@@ -176,8 +176,7 @@ main section.view1 .video {
   margin-top: 2rem;
   border-radius: 1rem;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  border: 0.8rem solid rgba(82, 80, 80, 0.2);
 }
 main section.view1 .video video {
   position: relative;
@@ -207,11 +206,34 @@ main section.view1 .video video {
     flex-direction: row;
     padding: 2rem;
     gap: 1rem;
+    margin: 0;
   }
   main section.view1 .texts {
     width: 50%;
   }
+  main section.view1 .texts .hero-text {
+    text-align: left;
+  }
+  main section.view1 .texts .hero-text h1 {
+    font-size: 4rem;
+    max-width: 15ch;
+    font-weight: 400;
+  }
+  main section.view1 .texts .hero-text .para {
+    font-size: 1.2rem;
+    opacity: 0.6;
+    max-width: 55ch;
+  }
+  main section.view1 .texts .btns {
+    flex-direction: row;
+  }
   main section.view1 .video {
-    width: 50%;
+    width: 35%;
+  }
+  main section.view1 .video video {
+    position: relative;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=style.css.map */
