@@ -13,7 +13,7 @@ html, body {
 
 div.follower {
   display: none;
-  position: absolute;
+  position: fixed;
   height: 1rem;
   width: 1rem;
   background-color: red;
@@ -58,12 +58,12 @@ main nav {
   z-index: 3;
   background-color: rgb(18, 16, 16);
   margin: 0.8rem 1rem;
-  border-radius: 1.6rem;
+  border-radius: 1.8rem;
+  padding: 1rem 1rem;
 }
 main nav .menu {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
 }
 main nav .menu .logo {
   font-size: 1.5rem;
@@ -78,6 +78,9 @@ main nav .menu .close {
   display: none;
   font-size: 1.8rem;
 }
+main nav .menu h2 {
+  display: none;
+}
 main nav .list {
   display: flex;
   flex-direction: column;
@@ -87,6 +90,15 @@ main nav .list {
 main nav .list a {
   display: none;
   font-size: 1.3rem;
+}
+main nav .list button {
+  display: none;
+  background-color: rgb(224, 65, 65);
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 1.8rem;
+  padding: 0.8rem 1.5rem;
 }
 main section.view1 {
   position: relative;
@@ -193,8 +205,15 @@ main section.view1 .video video {
     justify-content: space-between;
     width: 60%;
   }
+  main nav .menu {
+    display: flex;
+    gap: 1rem;
+  }
   main nav .menu .menu-i {
     display: none;
+  }
+  main nav .menu h2 {
+    display: initial;
   }
   main nav .list {
     flex-direction: row;
@@ -202,10 +221,14 @@ main section.view1 .video video {
   main nav .list a {
     display: initial;
   }
+  main nav .list #bookcall {
+    display: initial;
+  }
   main section.view1 {
     flex-direction: row;
-    padding: 2rem;
-    gap: 1rem;
+    justify-content: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
     margin: 0;
   }
   main section.view1 .texts {
@@ -233,7 +256,5 @@ main section.view1 .video video {
   main section.view1 .video video {
     position: relative;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }/*# sourceMappingURL=style.css.map */

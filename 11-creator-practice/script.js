@@ -1,6 +1,7 @@
 let follower = document.querySelector(".follower")
 let a = document.querySelectorAll('a')
 let list = document.querySelector(".list")
+let bookbtn = document.querySelector("#bookcall");
 
 window.addEventListener("mousemove", function(dets) {
     follower.style.top = dets.clientY + "px";
@@ -18,6 +19,7 @@ menu.addEventListener("click", function() {
     menu.style.display = "none"
     closing.style.display = "initial"
     list.style.padding = 1 + "rem"
+    bookbtn.style.display = "initial";
 })
 closing.addEventListener("click", function() {
     a.forEach((node)=> {
@@ -27,5 +29,6 @@ closing.addEventListener("click", function() {
     menu.style.display = "initial"
     closing.style.display = "none"
     list.style.padding = 0 + "rem"
+    bookbtn.style.display = "none";
 
 })
