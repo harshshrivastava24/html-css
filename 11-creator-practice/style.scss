@@ -56,13 +56,14 @@ main {
         z-index: 3;
         background-color: rgb(18, 16, 16);
         margin: 0.8rem 1rem;
-        border-radius: 1.8rem;
-        padding: 1rem 1rem;
+        border-radius: 3rem;
+        padding: 0.7rem 0.8rem;
 
     
         .menu {
         display: flex;
         justify-content: space-between;    
+        align-items: center;
         .logo {
             font-size: 1.5rem;
             background-color: rgb(238, 25, 25);
@@ -231,11 +232,14 @@ main {
     main {
         nav {
             display: flex;
-            justify-content: space-between;
-            width: 60%;
+            align-items: center;
+            gap: 4rem;
+            width: max-content;
+            margin: 1.5rem auto;
             .menu {
                 display: flex;
                 gap: 1rem;
+                align-items: center;
                 .menu-i {
                     display: none;
                 }
