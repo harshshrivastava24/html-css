@@ -2,6 +2,9 @@ let follower = document.querySelector(".follower")
 let a = document.querySelectorAll('a')
 let list = document.querySelector(".list")
 let bookbtn = document.querySelector("#bookcall");
+let section2 = document.querySelector(".view2")
+let card2 = document.querySelector(".card2")
+let card3 = document.querySelector(".card3")
 
 window.addEventListener("mousemove", function(dets) {
     follower.style.top = dets.clientY + "px";
@@ -31,4 +34,11 @@ closing.addEventListener("click", function() {
     list.style.padding = 0 + "rem"
     bookbtn.style.display = "none";
 
+})
+
+
+section2.addEventListener("mou", ()=> {
+    // card2.style.display = "initial"
+    card2.style.visibility = "visible"
+    card2.style.transform = `translateY(0)`
 })
